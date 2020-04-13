@@ -24,15 +24,34 @@ RUN \
 # Installing Python 3.7 on Ubuntu with Apt
 # Source: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
 #RUN \
+    #sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     #add-apt-repository ppa:deadsnakes/ppa -y && \
     #apt install python3.7 -y && \
+    #rm -rf /var/lib/apt/lists/*
 
 # Installing project dependencies
-#RUN \
+#RUN\
+    #sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     #apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev && \
     #pip install --upgrade pip && \
     #pip install pocketsphinx && \
     #pip install ipython && \
     #pip install pytest-cov && \
     #pip install codecov && \
-    #pip install -r requirements.txt
+    #pip install -r requirements.txt && \
+    #rm -rf /var/lib/apt/lists/*
+
+# Add files
+# Source: https://github.com/dockerfile/ubuntu/blob/master/Dockerfile
+#ADD root/.bashrc /root/.bashrc
+#ADD root/.gitconfig /root/.gitconfig
+#ADD root/.scripts /root/.scripts
+
+# Set environment variables.
+#ENV HOME /root
+
+# Define working directory.
+#WORKDIR /root
+
+# Define default command.
+#CMD ["bash"]
