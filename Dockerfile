@@ -1,10 +1,13 @@
+# Ubuntu Dockerfile
+# Source: https://hub.docker.com/layers/ubuntu/library/ubuntu/18.04
 # Pull base image
 FROM ubuntu:18.04
 
 MAINTAINER Egor Kostan
 
 # Check Ubuntu Version from the Command Line
-RUN uname -a && \
+RUN \
+    uname -a && \
     cat /etc/lsb-release
 
 # Install Ubuntu Dockerfile
