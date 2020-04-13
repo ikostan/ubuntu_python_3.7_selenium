@@ -6,7 +6,9 @@ RUN apt-get update -qy
     apt-get install software-properties-common -qy
     add-apt-repository ppa:deadsnakes/ppa -y
     apt install python3.7 -y
-    apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev
+
+# Installing project dependencies
+RUN apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev
     pip install --upgrade pip        
     pip install pocketsphinx
     pip install ipython
