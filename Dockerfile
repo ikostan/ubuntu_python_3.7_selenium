@@ -1,5 +1,8 @@
 FROM ubuntu:20.04
 
+# Check Ubuntu Version from the Command Line
+RUN lsb_release -a
+
 # Installing Python 3.7 on Ubuntu with Apt
 # Source: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
 RUN apt-get update -qy
