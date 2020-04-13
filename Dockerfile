@@ -12,9 +12,11 @@ RUN \
 
 # Install Ubuntu Dockerfile
 # Source: https://github.com/dockerfile/ubuntu/blob/master/Dockerfile
+# Source: https://github.com/phusion/baseimage-docker/issues/319
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update && \
+    apt-get install -y --no-install-recommends apt-utils && \
     apt-get -y upgrade && \
     apt-get install software-properties-common -qy && \
     rm -rf /var/lib/apt/lists/*
