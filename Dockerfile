@@ -23,11 +23,15 @@ RUN \
 
 # Installing Python 3.7 on Ubuntu with Apt
 # Source: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
-#RUN \
-    #sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
-    #add-apt-repository ppa:deadsnakes/ppa -y && \
-    #apt install python3.7 -y && \
-    #rm -rf /var/lib/apt/lists/*
+RUN \
+    sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+    add-apt-repository ppa:deadsnakes/ppa -y && \
+    apt install python3.7 -y && \
+    rm -rf /var/lib/apt/lists/*
+
+# Check Python version from CLI
+RUN \
+    python3.7 --version
 
 # Installing project dependencies
 #RUN\
