@@ -34,16 +34,21 @@ RUN \
     python3.7 --version
 
 # Installing project dependencies
+RUN \
+    sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+    apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev && \
+    pip install --upgrade pip && \
+    pip install pocketsphinx && \
+    pip install ipython && \
+    pip install pytest-cov && \
+    pip install codecov && \
+    rm -rf /var/lib/apt/lists/*
+
+# Installing project requirements
 #RUN\
     #sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
-    #apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev && \
-    #pip install --upgrade pip && \
-    #pip install pocketsphinx && \
-    #pip install ipython && \
-    #pip install pytest-cov && \
-    #pip install codecov && \
     #pip install -r requirements.txt && \
-    #rm -rf /var/lib/apt/lists/*
+    #rm -rf /var/lib/apt/lists/
 
 # Add files
 # Source: https://github.com/dockerfile/ubuntu/blob/master/Dockerfile
