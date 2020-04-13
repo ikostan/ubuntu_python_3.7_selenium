@@ -36,6 +36,7 @@ RUN \
 # Installing project dependencies
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+    apt-get update && \
     apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev && \
     pip install --upgrade pip && \
     pip install pocketsphinx && \
@@ -49,6 +50,25 @@ RUN \
     #sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     #pip install -r requirements.txt && \
     #rm -rf /var/lib/apt/lists/
+
+# Install Google Chrome
+# Source: https://hub.docker.com/r/joyzoursky/python-chromedriver/dockerfile
+#RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+#RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+#RUN apt-get -y update
+#RUN apt-get install -y google-chrome-stable
+
+# Check Chrome version
+# Source: https://askubuntu.com/questions/505531/what-version-of-google-chrome-do-i-have
+#RUN google-chrome --version
+
+# Install FireFox
+# Source: https://linuxconfig.org/how-to-install-uninstall-and-update-firefox-on-ubuntu-18-04-bionic-beaver-linux
+#RUN apt install firefox
+
+# Check FireFox version
+# Source: https://linuxconfig.org/how-to-install-uninstall-and-update-firefox-on-ubuntu-18-04-bionic-beaver-linux
+#RUN firefox --version
 
 # Add files
 # Source: https://github.com/dockerfile/ubuntu/blob/master/Dockerfile
