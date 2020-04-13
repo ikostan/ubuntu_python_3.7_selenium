@@ -37,6 +37,7 @@ RUN \
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update && \
+    add-apt-repository universe && \
     apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev && \
     pip install --upgrade pip && \
     pip install pocketsphinx && \
