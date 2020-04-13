@@ -15,7 +15,8 @@ RUN \
     apt-get -y upgrade && \
     apt-get install software-properties-common -qy
     #add-apt-repository ppa:deadsnakes/ppa -y && \
-    #apt install python3.7 -y
+    #apt install python3.7 -y && \
+    rm -rf /var/lib/apt/lists/*
 
 # Installing project dependencies
 #RUN apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev && \
