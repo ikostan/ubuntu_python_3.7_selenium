@@ -81,7 +81,6 @@ RUN \
 
 # Add files
 # Source: https://github.com/dockerfile/ubuntu/blob/master/Dockerfile
-ADD root/.bashrc /root/.bashrc
 ADD root/.gitconfig /root/.gitconfig
 ADD root/.scripts /root/.scripts
 
