@@ -99,7 +99,7 @@ RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get -y update && \
     wget https://github.com/ikostan/ubuntu_python_3.7_selenium/blob/master/requirements.txt && \
-    pip3 install ./requirements.txt  -y && \
+    pip3 install ./requirements.txt && \
     rm -rf /var/lib/apt/lists/*
 
 # Set environment variables.
