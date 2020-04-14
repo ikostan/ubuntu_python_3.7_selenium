@@ -79,23 +79,17 @@ RUN \
     pip install codecov && \
     rm -rf /var/lib/apt/lists/*
 
-# Installing project requirements
-RUN \
-    sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
-    pip install -r requirements.txt && \
-    rm -rf /var/lib/apt/lists/
-
 # Add files
 # Source: https://github.com/dockerfile/ubuntu/blob/master/Dockerfile
-#ADD root/.bashrc /root/.bashrc
-#ADD root/.gitconfig /root/.gitconfig
-#ADD root/.scripts /root/.scripts
+ADD root/.bashrc /root/.bashrc
+ADD root/.gitconfig /root/.gitconfig
+ADD root/.scripts /root/.scripts
 
 # Set environment variables.
-#ENV HOME /root
+ENV HOME /root
 
 # Define working directory.
-#WORKDIR /root
+WORKDIR /root
 
 # Define default command.
-#CMD ["bash"]
+CMD ["bash"]
