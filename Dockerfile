@@ -102,7 +102,7 @@ RUN \
     wget https://github.com/ikostan/ubuntu_python_3.7_selenium/blob/master/requirements.txt
 COPY ./requirements.txt /opt/app/requirements.txt
 WORKDIR /opt/app
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 COPY . /opt/app
 RUN \
     rm -rf /var/lib/apt/lists/*
