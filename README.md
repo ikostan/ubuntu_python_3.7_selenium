@@ -12,10 +12,12 @@ Contains:
 
 Aditional packages:
 
-| #  |     Package    |                                        Description                                         |  LINK   |
-| -- | -------------- | ------------------------------------------------------------------------------------------ | ------- |
-| 1  |  SWIG          | An interface compiler that connects programs written in C and C++ with scripting languages | [URL]() |
-| 2  |  Content Cell  |   Content Cell                                                                             | [URL]() |
+| #  | Package                            |                                        Description                                         |
+| -- | ---------------------------------- | ------------------------------------------------------------------------------------------ | 
+| 1  | SWIG(http://www.swig.org/exec.html)| An interface compiler that connects programs written in C and C++ with scripting languages | 
+| 2  | Content Cell[URL]()                | Content Cell                                                                               |
+| 3  | Content Cell[URL]()                | Content Cell                                                                               |
+| 4  | Content Cell[URL]()                | Content Cell                                                                               |
 
 SWIG is an interface compiler that connects programs written in C and C++ with scripting languages such as Perl, Python, Ruby, and Tcl.
 
