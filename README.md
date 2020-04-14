@@ -31,11 +31,26 @@ Python 3.7 packages:
 
 | #  | Package                               |                                      Description                                        |
 | -- | ------------------------------------- | --------------------------------------------------------------------------------------- | 
-| 1  | [pocketsphinx](https://packages.ubuntu.com/bionic/pocketsphinx)| Speech recognition tool                                        |
-| 2  | [ipython](https://pypi.org/project/ipython/)| Provides a toolkit to help you make the most out of using Python interactively    |
-| 3  | [python-pytest-cov](https://packages.ubuntu.com/bionic/python-pytest-cov)| py.test plugin to produce coverage reports           |
-| 4  | [codecov](https://codecov.io/)| Codecov provides highly integrated tools to group, merge, archive, and compare coverage reports |
-| 5  | []()|                                        |
+| 1  | [allure-pytest](https://pypi.org/project/allure-pytest/)| Allure Pytest Plugin                                                  |
+| 2  | [allure-python-commons](https://github.com/allure-framework/allure-python)| Common engine for all/custom modules                |
+| 3  | [appdirs](https://pypi.org/project/appdirs/)| Helps to choose directory for your app in order to sort user data                 |
+| 4  | [atomicwrites](https://pypi.org/project/atomicwrites/)| Atomic file writes                                                      |
+| 5  | [attrs](https://pypi.org/project/attrs/)| Helps you to write concise and correct software without slowing down your code        |
+| 6  | [audioread](https://pypi.org/project/audioread/)| Decode audio files using whichever backend is available                       |
+| 7  | [backcall](https://pypi.org/project/backcall/)| Specifications for callback functions passed in to an API                       |
+| 8  | [certifi](https://pypi.org/project/certifi/)| Collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts |
+| 9  | [cffi](https://pypi.org/project/cffi/)| Foreign Function Interface for Python calling C code                                    |
+| 10 | [chardet](https://pypi.org/project/chardet2/)| Detects various encoding formats |
+| 11 | [codecov](https://codecov.io/)| Codecov provides highly integrated tools to group, merge, archive, and compare coverage reports |
+| 12 | [colorama](https://pypi.org/project/colorama/)| Makes ANSI escape character sequences (for producing colored terminal text and cursor positioning) work under MS Windows |
+| 13 | [configparser](https://pypi.org/project/configparser2/)| configparser2 is derived from Lukasz Langa's configparser mercurial repo. The only difference is a name is not conflicting with the default python3 configparser                                           |
+| 14 | [coverage](https://pypi.org/project/coverage/)| Coverage.py measures code coverage, typically during test execution             |
+| 15 | [crayons](https://pypi.org/project/crayons/)| Gives you colored strings for terminal usage                                      |
+| 16 | [cycler](https://pypi.org/project/Cycler/)| The public API of cycler consists of a class Cycler, a factory function cycler(), and a concatenation function concat() |
+| -- | []()|                                        |                                       |
+| -- | [pocketsphinx](https://packages.ubuntu.com/bionic/pocketsphinx)| Speech recognition tool                                        |
+| -- | [ipython](https://pypi.org/project/ipython/)| Provides a toolkit to help you make the most out of using Python interactively    |
+| -- | [python-pytest-cov](https://packages.ubuntu.com/bionic/python-pytest-cov)| py.test plugin to produce coverage reports           |
 
 Aditional resources:
 
