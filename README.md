@@ -12,7 +12,7 @@ Contains:
 - Chrome
 - Firefox
 
-Aditional packages:
+### List of aditional packages
 
 | #  | Package                               |                                      Description                                        |
 | -- | ------------------------------------- | --------------------------------------------------------------------------------------- | 
@@ -27,7 +27,7 @@ Aditional packages:
 | 9 | [wget](https://packages.ubuntu.com/bionic/wget)| Retrieves files from the web                                                   |
 | 10 | [python3-pip](https://packages.ubuntu.com/bionic/python3-pip)| Python package installer                                         |
 
-Python 3.7 packages:
+### List of Python 3.7 packages
 
 | #  | Package                               |                                      Description                                        |
 | -- | ------------------------------------- | --------------------------------------------------------------------------------------- | 
