@@ -95,12 +95,16 @@ RUN \
     rm -rf /var/lib/apt/lists/*
 
 # Install requirements.txt
+# Source: https://stackoverflow.com/questions/34398632/docker-how-to-run-pip-requirements-txt-only-if-there-was-a-change
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get -y update && \
-    wget https://github.com/ikostan/ubuntu_python_3.7_selenium/blob/master/requirements.txt && \
-    find -name requirements.txt && \
-    pip3 install -r /requirements.txt && \
+    wget https://github.com/ikostan/ubuntu_python_3.7_selenium/blob/master/requirements.txt
+COPY ./requirements.txt /opt/app/requirements.txt
+WORKDIR /opt/app
+RUN pip install -r requirements.txt
+COPY . /opt/app
+RUN \
     rm -rf /var/lib/apt/lists/*
 
 # Set environment variables.
