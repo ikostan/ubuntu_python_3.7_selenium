@@ -55,7 +55,7 @@ RUN \
     rm -rf /var/lib/apt/lists/*
 
 # Uninstall Python 2.7
-RUN \
+#RUN \
     #python --version
     #apt-get purge --auto-remove python2.7
 
