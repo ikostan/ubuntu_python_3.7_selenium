@@ -94,6 +94,14 @@ RUN \
     pip3 install codecov && \
     rm -rf /var/lib/apt/lists/*
 
+# Install requirements.txt
+RUN \
+    sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+    apt-get -y update && \
+    wget https://github.com/ikostan/ubuntu_python_3.7_selenium/blob/master/requirements.txt && \
+    pip3 install ./requirements.txt  -y && \
+    rm -rf /var/lib/apt/lists/*
+
 # Set environment variables.
 ENV HOME /root
 
