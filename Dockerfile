@@ -24,7 +24,7 @@ RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get -y update && \
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
-    apt install ./google-chrome-stable_current_amd64.deb && \
+    apt install ./google-chrome-stable_current_amd64.deb -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Check Chrome version
