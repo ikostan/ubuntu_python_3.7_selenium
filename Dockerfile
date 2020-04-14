@@ -86,12 +86,12 @@ RUN \
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update && \
-    #add-apt-repository universe && \
+    #add-apt-repository universe && \  # not needed anymore
     apt-get install -y python3-dev build-essential swig git libpulse-dev libasound2-dev && \
-    pip3 install pocketsphinx && \
-    pip3 install ipython && \
-    pip3 install pytest-cov && \
-    pip3 install codecov && \
+    #pip3 install pocketsphinx && \    # moved to requirements.txt
+    #pip3 install ipython && \         # moved to requirements.txt
+    #pip3 install pytest-cov && \      # moved to requirements.txt
+    #pip3 install codecov && \         # moved to requirements.txt
     rm -rf /var/lib/apt/lists/*
 
 # Install requirements.txt
