@@ -10,6 +10,14 @@ RUN \
     uname -a && \
     cat /etc/lsb-release
 
+# Install WGET
+# https://www.rosehosting.com/blog/how-to-install-and-use-wget-on-ubuntu
+RUN \
+    sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+    apt-get -y update && \
+    apt install wget && \
+    rm -rf /var/lib/apt/lists/*
+
 # Install Google Chrome
 # Source: https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-ubuntu-18-04
 RUN \
