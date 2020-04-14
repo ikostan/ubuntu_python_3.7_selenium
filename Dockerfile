@@ -25,8 +25,8 @@ RUN \
 # Source: https://linuxconfig.org/how-to-install-uninstall-and-update-firefox-on-ubuntu-18-04-bionic-beaver-linux
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
-    apt-get update && \
-    apt install firefox && \
+    apt-get update -y && \
+    apt install firefox -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Check FireFox version
