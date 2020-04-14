@@ -5,6 +5,10 @@ FROM ubuntu:18.04
 
 MAINTAINER Egor Kostan
 
+# Uninstall Python 2.7
+RUN \
+    apt purge python2.7-minimal
+
 # Check Ubuntu Version from the Command Line
 RUN \
     uname -a && \
