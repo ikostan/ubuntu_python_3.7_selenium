@@ -94,8 +94,6 @@ RUN \
     pip3 install codecov && \
     rm -rf /var/lib/apt/lists/*
 
-RUN python --version
-
 # Set environment variables.
 ENV HOME /root
 
