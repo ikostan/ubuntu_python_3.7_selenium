@@ -29,6 +29,8 @@ Contains:
 
 ### List of Python 3.7 packages
 
+**Note:** the list is not final and still under review.
+
 | #  | Package                               |                                      Description                                        |
 | -- | ------------------------------------- | --------------------------------------------------------------------------------------- | 
 | 1  | [allure-pytest](https://pypi.org/project/allure-pytest/)| Allure Pytest Plugin                                                  |
