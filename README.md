@@ -22,9 +22,13 @@ Aditional packages:
 | 6  | [libasound2-dev](https://packages.ubuntu.com/bionic/libasound2-dev)| Shared library for ALSA applications - development files   |
 | 7  | [pocketsphinx](https://packages.ubuntu.com/bionic/pocketsphinx)| Speech recognition tool                                        |
 | 8  | [ipython3](https://packages.ubuntu.com/bionic/ipython3)| Enhanced interactive Python 3 shell                                    |
-| 9  | []()|                                        |
-| 10 | []()|                                        |
-
+| 9  | [software-properties-common](https://packages.ubuntu.com/bionic/software-properties-common)| Manage the repositories that you install software from (common)|
+| 10 | [apt-utils](https://packages.ubuntu.com/bionic/apt-utils)| Package management related utility programs                          |
+| 11 | [wget](https://packages.ubuntu.com/bionic/wget)| Retrieves files from the web                                                   |
+| 12 | [python3-pip](https://packages.ubuntu.com/bionic/python3-pip)| Python package installer                                         |
+| 13 | [python-pytest-cov](https://packages.ubuntu.com/bionic/python-pytest-cov)| py.test plugin to produce coverage reports           |
+| 14 | [codecov](https://codecov.io/)| Codecov provides highly integrated tools to group, merge, archive, and compare coverage reports |
+| 15 | []()|                                        |
 
 SWIG is an interface compiler that connects programs written in C and C++ with scripting languages such as Perl, Python, Ruby, and Tcl.
 
