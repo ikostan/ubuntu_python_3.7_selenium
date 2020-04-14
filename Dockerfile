@@ -15,7 +15,7 @@ RUN \
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get -y update && \
-    apt install wget && \
+    apt install wget -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Google Chrome
