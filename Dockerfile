@@ -80,10 +80,10 @@ RUN \
     rm -rf /var/lib/apt/lists/*
 
 # Installing project requirements
-#RUN \
-    #sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
-    #pip install -r requirements.txt && \
-    #rm -rf /var/lib/apt/lists/
+RUN \
+    sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+    pip install -r requirements.txt && \
+    rm -rf /var/lib/apt/lists/
 
 # Add files
 # Source: https://github.com/dockerfile/ubuntu/blob/master/Dockerfile
