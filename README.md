@@ -29,7 +29,7 @@ Contains:
 
 ### List of Python 3.7 packages
 
-**Note:** the list is not final and still under review.
+**Note:** the list is not final and still under review. The latest version of requirements.txt file is [here](https://github.com/ikostan/ubuntu_python_3.7_selenium/blob/master/requirements.txt).
 
 | #  | Package                               |                                      Description                                        |
 | -- | ------------------------------------- | --------------------------------------------------------------------------------------- | 
