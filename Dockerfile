@@ -75,7 +75,7 @@ RUN \
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update && \
-    apt install python3-pip && \
+    apt install python3-pip -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Check PIP version
