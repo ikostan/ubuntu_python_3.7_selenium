@@ -7,7 +7,8 @@ MAINTAINER Egor Kostan
 
 # Uninstall Python 2.7
 RUN \
-    apt purge python2.7-minimal
+    #apt purge python2.7-minimal
+    python --version
 
 # Check Ubuntu Version from the Command Line
 RUN \
