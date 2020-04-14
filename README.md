@@ -1,6 +1,6 @@
 ## Docker Ubuntu Image
 
-### Ubuntu image for Web automation (Python 3.7, Chrome, Firefox).
+### Ubuntu image for Web automation (Python 3.7, Selenium, Chrome, Firefox).
 
 Python 3 with Chromedriver, for running Selenium web automated tests.
 
