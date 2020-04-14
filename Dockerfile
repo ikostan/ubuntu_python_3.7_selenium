@@ -56,7 +56,7 @@ RUN \
 
 # Uninstall Python 2.7
 RUN \
-    python --version
+    #python --version
     #apt-get purge --auto-remove python2.7
 
 # Installing Python 3.7 on Ubuntu with Apt
@@ -71,17 +71,27 @@ RUN \
 RUN \
     python3.7 --version
 
+# Installing PIP3
+RUN \
+    sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+    apt-get update && \
+    apt install python3-pip && \
+    rm -rf /var/lib/apt/lists/*
+
+# Check PIP version
+RUN \
+    pip3 --version
+
 # Installing project dependencies
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update && \
     #add-apt-repository universe && \
     apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev && \
-    pip install --upgrade pip && \
-    pip install pocketsphinx && \
-    pip install ipython && \
-    pip install pytest-cov && \
-    pip install codecov && \
+    pip3 install pocketsphinx && \
+    pip3 install ipython && \
+    pip3 install pytest-cov && \
+    pip3 install codecov && \
     rm -rf /var/lib/apt/lists/*
 
 # Set environment variables.
