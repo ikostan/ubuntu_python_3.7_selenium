@@ -26,7 +26,7 @@ RUN \
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update -y && \
-    apt install firefox -y && \
+    apt install firefox && \
     rm -rf /var/lib/apt/lists/*
 
 # Check FireFox version
