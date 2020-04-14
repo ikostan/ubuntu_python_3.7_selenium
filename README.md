@@ -30,8 +30,6 @@ Aditional packages:
 | 14 | [codecov](https://codecov.io/)| Codecov provides highly integrated tools to group, merge, archive, and compare coverage reports |
 | 15 | []()|                                        |
 
-SWIG is an interface compiler that connects programs written in C and C++ with scripting languages such as Perl, Python, Ruby, and Tcl.
-
 [GitHub](https://github.com/ikostan/ubuntu_python_3.7_selenium/)
 
 [Docker](https://hub.docker.com/repository/docker/ikostan/ubuntu_python_3.7_selenium)
