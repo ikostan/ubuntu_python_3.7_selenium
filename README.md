@@ -12,12 +12,12 @@ Contains:
 
 Aditional packages:
 
-| #  | Package                            |                                        Description                                         |
-| -- | ---------------------------------- | ------------------------------------------------------------------------------------------ | 
-| 1  | SWIG(http://www.swig.org/exec.html)| An interface compiler that connects programs written in C and C++ with scripting languages | 
-| 2  | [Content Cell]()                   | Content Cell                                                                               |
-| 3  | [Content Cell()                    | Content Cell                                                                               |
-| 4  | [Content Cell]()                   | Content Cell                                                                               |
+| # | Package                               |                                      Description                                        |
+| - | ------------------------------------- | --------------------------------------------------------------------------------------- | 
+| 1 | [SWIG](http://www.swig.org/exec.html) | Interface compiler that connects programs written in C and C++ with scripting languages | 
+| 2 | [git](https://git-scm.com/)           | Distributed version control system                                                      |
+| 3 | [python3-dev](https://packages.debian.org/stable/python3-dev)| Header files and a static library for Python                     |
+| 4 | [Content Cell]()                      | Content Cell                                                                            |
 
 SWIG is an interface compiler that connects programs written in C and C++ with scripting languages such as Perl, Python, Ruby, and Tcl.
 
