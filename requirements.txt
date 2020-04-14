@@ -8,8 +8,10 @@ backcall==0.1.0
 certifi==2020.4.5.1
 cffi==1.14.0
 chardet==3.0.4
+codecov==2.0.22
 colorama==0.4.3
 configparser==5.0.0
+coverage==5.1
 crayons==0.3.0
 cycler==0.10.0
 decorator==4.4.2
@@ -31,7 +33,7 @@ mypy-extensions==0.4.3
 numba==0.48.0
 numpy==1.18.2
 packaging==20.3
-parso==0.6.2
+parso==0.7.0
 pickleshare==0.7.5
 pluggy==0.13.1
 pocketsphinx==0.1.15
@@ -41,6 +43,7 @@ pycparser==2.20
 Pygments==2.6.1
 pyparsing==2.4.7
 pytest==5.4.1
+pytest-cov==2.8.1
 python-dateutil==2.8.1
 requests==2.23.0
 resampy==0.2.2
