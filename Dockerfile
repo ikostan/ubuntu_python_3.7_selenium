@@ -89,7 +89,7 @@ RUN \
     #add-apt-repository universe && \
     apt-get install -y python3-dev build-essential swig git libpulse-dev libasound2-dev && \
     pip3 install pocketsphinx && \
-    pip3 install ipython && \
+    pip3 install ipython3 && \
     pip3 install pytest-cov && \
     pip3 install codecov && \
     rm -rf /var/lib/apt/lists/*
