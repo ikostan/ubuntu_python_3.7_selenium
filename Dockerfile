@@ -87,7 +87,7 @@ RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update && \
     #add-apt-repository universe && \
-    apt-get install -y python-dev python-pip build-essential swig git libpulse-dev libasound2-dev && \
+    apt-get install -y python3-dev build-essential swig git libpulse-dev libasound2-dev && \
     pip3 install pocketsphinx && \
     pip3 install ipython && \
     pip3 install pytest-cov && \
