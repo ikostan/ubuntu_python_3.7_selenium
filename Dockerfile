@@ -54,6 +54,11 @@ RUN \
     apt-get install software-properties-common -qy && \
     rm -rf /var/lib/apt/lists/*
 
+# Uninstall Python 2.7
+RUN \
+    python --version
+    #apt-get purge --auto-remove python2.7
+
 # Installing Python 3.7 on Ubuntu with Apt
 # Source: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
 RUN \
@@ -78,11 +83,6 @@ RUN \
     pip install pytest-cov && \
     pip install codecov && \
     rm -rf /var/lib/apt/lists/*
-
-# Uninstall Python 2.7
-RUN \
-    python --version
-    #apt-get purge --auto-remove python2.7
 
 # Set environment variables.
 ENV HOME /root
