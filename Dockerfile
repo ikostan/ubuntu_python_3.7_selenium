@@ -79,11 +79,6 @@ RUN \
     pip install codecov && \
     rm -rf /var/lib/apt/lists/*
 
-# Add files
-# Source: https://github.com/dockerfile/ubuntu/blob/master/Dockerfile
-ADD root/.gitconfig /root/.gitconfig
-ADD root/.scripts /root/.scripts
-
 # Set environment variables.
 ENV HOME /root
 
