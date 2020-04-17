@@ -86,7 +86,7 @@ RUN \
 RUN \
     #add-apt-repository universe && \  # not needed anymore
     apt-get update && \
-    apt-get install -y python3-dev build-essential swig git libpulse-dev libasound2-dev && \
+    apt-get install -y python3-dev build-essential swig git libpulse-dev libasound2-dev
     #pip3 install pocketsphinx && \    # moved to requirements.txt
     #pip3 install ipython && \         # moved to requirements.txt
     #pip3 install pytest-cov && \      # moved to requirements.txt
