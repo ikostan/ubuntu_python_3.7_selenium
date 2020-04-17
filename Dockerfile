@@ -13,11 +13,14 @@ RUN \
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list
 
+# Install unzip
+RUN apt-get update && \
+    apt-get install unzip -y
+
 # Essential tools like xvfb, wget, etc...
 RUN apt-get update && \
     apt-get install -y && \
     zip && \
-    unzip && \
     curl && \
     wget && \
     xvfb
