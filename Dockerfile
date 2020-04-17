@@ -19,11 +19,19 @@ RUN apt-get update && \
 
 # Essential tools like xvfb, wget, etc...
 RUN apt-get update && \
-    apt-get install -y && \
-    zip && \
-    curl && \
-    wget && \
-    xvfb
+    apt-get install zip -y
+
+# Essential tools like xvfb, wget, etc...
+RUN apt-get update && \
+    apt-get install -y curl
+    
+# Essential tools like xvfb, wget, etc...
+RUN apt-get update && \
+    apt-get install -y wget
+    
+# Essential tools like xvfb, wget, etc...
+RUN apt-get update && \
+    apt-get install -y xvfb
 
 # Install WGET
 # https://www.rosehosting.com/blog/how-to-install-and-use-wget-on-ubuntu
