@@ -24,11 +24,13 @@ RUN apt-get update && \
 # Install WGET
 # https://www.rosehosting.com/blog/how-to-install-and-use-wget-on-ubuntu
 RUN \
+    apt-get update && \
     apt install wget -y
 
 # Install Google Chrome
 # Source: https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-ubuntu-18-04
 RUN \
+    apt-get update && \
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     apt install ./google-chrome-stable_current_amd64.deb -y
 
@@ -39,6 +41,7 @@ RUN google-chrome --version
 # Install FireFox
 # Source: https://linuxconfig.org/how-to-install-uninstall-and-update-firefox-on-ubuntu-18-04-bionic-beaver-linux
 RUN \
+    apt-get update && \
     apt install firefox -y
 
 # Check FireFox version
@@ -62,6 +65,7 @@ RUN \
 # Installing Python 3.7 on Ubuntu with Apt
 # Source: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
 RUN \
+    apt-get update && \
     add-apt-repository ppa:deadsnakes/ppa -y && \
     apt install python3.7 -y
 
@@ -71,6 +75,7 @@ RUN \
 
 # Installing PIP3
 RUN \
+    apt-get update && \
     apt install python3-pip -y
 
 # Check PIP version
@@ -80,6 +85,7 @@ RUN \
 # Installing project dependencies
 RUN \
     #add-apt-repository universe && \  # not needed anymore
+    apt-get update && \
     apt-get install -y python3-dev build-essential swig git libpulse-dev libasound2-dev && \
     #pip3 install pocketsphinx && \    # moved to requirements.txt
     #pip3 install ipython && \         # moved to requirements.txt
@@ -89,6 +95,7 @@ RUN \
 # Install requirements.txt
 # Source: https://stackoverflow.com/questions/34398632/docker-how-to-run-pip-requirements-txt-only-if-there-was-a-change
 RUN \
+    apt-get update && \
     wget https://github.com/ikostan/ubuntu_python_3.7_selenium/blob/master/requirements.txt
 COPY ./requirements.txt /opt/app/requirements.txt
 WORKDIR /opt/app
