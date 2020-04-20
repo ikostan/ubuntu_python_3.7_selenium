@@ -27,10 +27,6 @@ RUN apt-get update && \
     
 # Essential tools like xvfb, wget, etc...
 RUN apt-get update && \
-    apt-get install -y wget
-    
-# Essential tools like xvfb, wget, etc...
-RUN apt-get update && \
     apt-get install -y xvfb
 
 # Install WGET
