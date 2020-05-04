@@ -49,7 +49,12 @@ Contains:
 | 14 | [coverage](https://pypi.org/project/coverage/)| Coverage.py measures code coverage, typically during test execution             |
 | 15 | [crayons](https://pypi.org/project/crayons/)| Gives you colored strings for terminal usage                                      |
 | 16 | [cycler](https://pypi.org/project/Cycler/)| The public API of cycler consists of a class Cycler, a factory function cycler(), and a concatenation function concat() |
-| -- | []()|                                        |                                       |
+| 17 | [decorator](https://pypi.org/project/decorator/)|The goal of the decorator module is to make it easy to define signature-preserving function decorators and decorator factories|
+| 18 | [distlib](https://pypi.org/project/distlib/)|Low-level components of distutils2/packaging, augmented with higher-level APIs for making packaging easier |
+| 19 | [filelock](https://pypi.org/project/filelock/2.0.13/)|This package contains a single module, which implements a platform independent file lock in Python|
+| 20 | [idna](https://pypi.org/project/idna/)|Support for the Internationalised Domain Names in Applications (IDNA) protocol as specified in RFC 5891|
+| 21 | [importlib-metadata](https://pypi.org/project/importlib-metadata/)|A library to access the metadata for a Python package|
+| -- | []()|                                        |
 | -- | [pocketsphinx](https://packages.ubuntu.com/bionic/pocketsphinx)| Speech recognition tool                                        |
 | -- | [ipython](https://pypi.org/project/ipython/)| Provides a toolkit to help you make the most out of using Python interactively    |
 | -- | [python-pytest-cov](https://packages.ubuntu.com/bionic/python-pytest-cov)| py.test plugin to produce coverage reports           |
